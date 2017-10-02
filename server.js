@@ -53,6 +53,12 @@ app.get('/bad', (req, res) =>{
     res.send('Whoa! How\'d you end up here??');
 });
 
+app.get('/projects', (req,res) =>{
+    res.render('project.hbs',{
+        pageTitle: "Projects"
+    });
+});
+
 app.get('/emily', (req, res) =>{
      res.send(`<h1> Emily is a Babe!!!</h>`);
 });
